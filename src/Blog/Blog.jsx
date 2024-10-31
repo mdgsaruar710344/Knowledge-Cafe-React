@@ -1,7 +1,16 @@
+import { useState } from "react";
 
 
 const Blog = ({blog,handleBookmark, handleReadingTime}) => {
   const{id,author,title,author_img,reading_time,cover,date_of_posting,hash_tags}=blog
+
+
+  const [showButton, setShowButton] = useState(true)
+
+  // Handler to hide the button on click
+  const handleClick = () => {
+    setShowButton(false);
+  };
   return (
     <div>
 
@@ -16,7 +25,7 @@ const Blog = ({blog,handleBookmark, handleReadingTime}) => {
       
       {date_of_posting}
 
-      <button className="bg-green-500 m-4 p-2"  onClick={()=>handleBookmark(blog)}>Click to Bookmark</button>
+     { showButton? <button className="bg-green-500 m-4 p-2"  onClick={()=>{handleBookmark(blog);handleClick();}}>Click to Bookmark</button>:'Bookmarked already'}
 
       </div>
       </div>
