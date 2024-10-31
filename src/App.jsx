@@ -16,7 +16,24 @@ function App() {
   },[])
 
 
+const[bookmarks, setBookmarks]=useState([]);
+const[readingTime,setReadingTime]=useState(0)
 
+function handleBookmark(blog){
+  
+const newbookmarks=[...bookmarks, blog]
+setBookmarks(newbookmarks);
+}
+
+function handleReadingTime(reading_time,id){
+const newReadingTime=readingTime+ reading_time;
+setReadingTime(newReadingTime);
+console.log(id)
+const updatedBookmarked=bookmarks.filter(bookmark=>bookmark.id!==id)
+//console.log(updatedBookmarked);
+
+setBookmarks(updatedBookmarked);
+}
   return (
     <>
       <div>
@@ -25,11 +42,11 @@ function App() {
     length: {blogs.length}
       <div className='flex justify-between'>
           <div>
-          <Blogs blogs={blogs}></Blogs>
+          <Blogs handleBookmark={handleBookmark} handleReadingTime={handleReadingTime} blogs={blogs}></Blogs>
           </div>
           
           <div>
-          <Bookmarks></Bookmarks>
+          <Bookmarks readingTime={readingTime} bookmarks={bookmarks}></Bookmarks>
           </div>
       </div>
 

@@ -1,46 +1,51 @@
 [
   {
       "id": 1,
+      "title": "Understanding the Basics of JavaScript",
       "author": "Jane Doe",
-      "author_img": "https://example.com/images/jane_doe.jpg",
-      "cover": "https://example.com/images/blog1_cover.jpg",
-      "reading_time": "5 min read",
+      "author_img": "https://i.ibb.co.com/hHQ5Vnv/pexels-phillip-hutton-343101-947639.jpg",
+      "cover": "https://i.ibb.co.com/RQV7FWG/payam-moghtader-w8k-Ep-A3-u-T4-unsplash.jpg",
+      "reading_time": 5,
       "date_of_posting": "2024-10-01",
       "hash_tags": ["#technology", "#webdev", "#javascript"]
   },
   {
       "id": 2,
+      "title": "A Guide to Mastering Data Structures",
       "author": "John Smith",
-      "author_img": "https://example.com/images/john_smith.jpg",
-      "cover": "https://example.com/images/blog2_cover.jpg",
-      "reading_time": "7 min read",
+      "author_img": "https://i.ibb.co.com/1LsVZ91/pexels-imjimmyqian-2076596.jpg",
+      "cover": "https://i.ibb.co.com/9vxBZFk/marc-olivier-jodoin-Nq-OIn-J-ttq-M-unsplash.jpg",
+      "reading_time": 7,
       "date_of_posting": "2024-10-05",
       "hash_tags": ["#programming", "#algorithms", "#datastructures"]
   },
   {
       "id": 3,
+      "title": "CSS Tips for Beautiful UI Designs",
       "author": "Emily Johnson",
-      "author_img": "https://example.com/images/emily_johnson.jpg",
-      "cover": "https://example.com/images/blog3_cover.jpg",
-      "reading_time": "3 min read",
+      "author_img": "https://i.ibb.co.com/zSTFym6/pexels-mastercowley-634021.jpg",
+      "cover": "https://i.ibb.co.com/wgZS1tK/emile-guillemot-ARosb-KOjd68-unsplash.jpg",
+      "reading_time": 3,
       "date_of_posting": "2024-10-10",
       "hash_tags": ["#design", "#css", "#frontend"]
   },
   {
       "id": 4,
+      "title": "Introduction to Machine Learning with Python",
       "author": "Chris Lee",
-      "author_img": "https://example.com/images/chris_lee.jpg",
-      "cover": "https://example.com/images/blog4_cover.jpg",
-      "reading_time": "8 min read",
+      "author_img": "https://i.ibb.co.com/dkWDT15/pexels-emilygarland-1499327.jpg",
+      "cover": "https://i.ibb.co.com/SsHzgh9/ingo-doerrie-Fkwj-xk6yck-unsplash.jpg",
+      "reading_time": 8,
       "date_of_posting": "2024-10-15",
       "hash_tags": ["#machinelearning", "#ai", "#python"]
   },
   {
       "id": 5,
+      "title": "Boosting Productivity with Lifestyle Changes",
       "author": "Anna Brown",
-      "author_img": "https://example.com/images/anna_brown.jpg",
-      "cover": "https://example.com/images/blog5_cover.jpg",
-      "reading_time": "6 min read",
+      "author_img": "https://i.ibb.co.com/Zdt1Cyc/pexels-blitzboy-1040880.jpg",
+      "cover": "https://i.ibb.co.com/dQqMpRN/dylan-mcleod-g47-YSnleb-C8-unsplash.jpg",
+      "reading_time": 6,
       "date_of_posting": "2024-10-20",
       "hash_tags": ["#productivity", "#lifestyle", "#worklife"]
   }

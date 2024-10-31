@@ -1,9 +1,10 @@
 
 
-const Bookmark = () => {
+const Bookmark = ({bookmark}) => {
+  const{title,id}=bookmark;
   return (
-    <div>
-      Bookmark:
+    <div className="m-4">
+      Bookmark:{title}
     </div>
   );
 };

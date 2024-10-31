@@ -1,13 +1,16 @@
 import Bookmark from "../Bookmark/Bookmark";
 
 
-const Bookmarks = () => {
+const Bookmarks = ({bookmarks, readingTime}) => {
+console.log(bookmarks);
   return (
     <div>
-      <h1>Bookmarks:</h1>
-      <Bookmark></Bookmark>
-      <Bookmark></Bookmark>
-      <Bookmark></Bookmark>
+      <div className="m-4"> Reading Time:{readingTime} </div>
+      <div>
+      Bookmarks:{bookmarks.map((bookmark,idx)=><Bookmark key={idx} bookmark={bookmark}></Bookmark>)} 
+      </div>
+     
+    
     </div>
   );
 };
